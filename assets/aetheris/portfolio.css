@@ -1,0 +1,122 @@
+﻿/* Portfolio art direction. Shared biography styles remain in aetheris.css. */
+.aetheris-showcase{--line:#263b51;--muted:#afbed0;background:#040a12}
+.aetheris-showcase .site-header{position:relative;z-index:3;border-bottom-color:#46719355}
+.aetheris-showcase .hero{width:100%;max-width:none;padding:85px max(6%,calc((100vw - 1280px)/2)) 0;min-height:850px;grid-template-columns:1fr 1.05fr;gap:0 35px;overflow:hidden;background:radial-gradient(ellipse at 80% 35%,#064b7b55,transparent 47%),linear-gradient(125deg,#070c14 20%,#0a1c30 65%,#040b14)}
+.aetheris-showcase .hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 30%,#53bcf30c 30.1%,transparent 30.3%,transparent 70%,#53bcf30c 70.1%,transparent 70.3%);background-size:100% 100%}
+.aetheris-showcase .hero:after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#66caff,transparent)}
+.aetheris-showcase .hero h1{font-size:clamp(50px,5.7vw,84px);letter-spacing:-.04em;margin-bottom:30px}
+.aetheris-showcase .hero-tagline{font-size:clamp(27px,2.8vw,42px);line-height:1.35}
+.aetheris-showcase .hero-tagline em{color:#73d3ff}
+.aetheris-showcase .hero-copy>.eyebrow{display:flex;align-items:center;gap:12px;font-size:9px;letter-spacing:.18em}
+.aetheris-showcase .hero-copy>.eyebrow:before{content:'';width:25px;height:1px;background:#78d5ff}
+.aetheris-showcase .hero-logo{position:relative;padding:50px 0;isolation:isolate;transform:translateY(-10px)}
+.aetheris-showcase .hero-logo:before{content:'';position:absolute;inset:15% 0 3%;z-index:-1;background:radial-gradient(ellipse,#1266ac55,transparent 70%);filter:blur(18px);animation:halo-breathe 7s ease-in-out infinite alternate}
+.aetheris-showcase .hero-logo:after{content:'';position:absolute;left:10%;right:10%;bottom:20px;height:1px;background:linear-gradient(90deg,transparent,#72c9fa,transparent);box-shadow:0 0 30px #009dff}
+.logo-caption{display:block;text-align:center;color:#94b4cc;font-size:9px;letter-spacing:.32em;margin-bottom:20px}
+.aetheris-showcase .hero-logo img{filter:drop-shadow(0 18px 28px #0008)}
+.aetheris-showcase .button{background:linear-gradient(115deg,#bfefff,#69c9f0);color:#071827;border:1px solid #b1e9ff;font-weight:bold;box-shadow:0 8px 35px #008ac525;transition:transform .25s,box-shadow .25s}
+.aetheris-showcase .button span{color:#052b45}.aetheris-showcase .button:hover{transform:translateY(-3px);box-shadow:0 8px 40px #008ac555}
+.aetheris-showcase .hero-bottom{padding:25px 0;margin-top:45px}
+.chapter-nav{display:flex;justify-content:center;gap:0;background:#09131fee;backdrop-filter:blur(16px);position:sticky;top:0;z-index:5;border-bottom:1px solid #2a4660;box-shadow:0 8px 35px #0003}
+.chapter-nav a{padding:21px 36px;font-size:11px;color:#c4d4e4;border-left:1px solid #23374c}.chapter-nav a:last-child{border-right:1px solid #23374c}.chapter-nav span{color:#63b9e8;font-size:9px;margin-right:15px}.chapter-nav a:hover{background:#15324a;color:white}
+.aetheris-showcase section[id]{scroll-margin-top:72px}
+.aetheris-showcase .section{padding-top:120px;padding-bottom:120px}
+.aetheris-showcase h2{font-size:clamp(38px,4.3vw,64px);line-height:1.08}.aetheris-showcase h2 em{color:#80c6ec}
+.aetheris-showcase .eyebrow{font-size:10px;letter-spacing:.22em}
+.aetheris-showcase #mission{position:relative;border-top:0;gap:10%}
+.aetheris-showcase #mission .lead{font-size:24px;color:#dce7f3;border-left:2px solid #69c8f1;padding-left:25px}
+.purpose-mark{width:190px;height:145px;position:relative;margin:45px 0 28px;transform:skewY(-12deg)}
+.purpose-mark span{position:absolute;height:21px;background:linear-gradient(90deg,#16344f,#9bdefb);box-shadow:0 10px 22px #0006;border-top:1px solid #a2dcfa}
+.purpose-mark span:nth-child(1){width:95px;right:0;top:12px}.purpose-mark span:nth-child(2){width:140px;right:0;top:57px;background:linear-gradient(90deg,#06366c,#1787d8)}.purpose-mark span:nth-child(3){width:190px;right:0;top:102px}
+.principles{display:flex;flex-wrap:wrap;gap:8px}.principles span{font-size:10px;letter-spacing:.06em;padding:8px 12px;border:1px solid #2b475d;color:#a4cee5}
+.aetheris-showcase .nexus{position:relative;background:radial-gradient(ellipse at 20% 15%,#13558955,transparent 50%),linear-gradient(145deg,#0a1d32,#060e19 75%);border-top:1px solid #386386;border-bottom:1px solid #253c53}
+.aetheris-showcase .nexus-name{font-size:clamp(64px,8vw,120px);font-weight:600;color:#e2f4ff;letter-spacing:-.065em}.aetheris-showcase .nexus-name span{font-weight:300;font-size:.31em;color:#74c5f0}
+.nexus-system{margin:65px 0 80px;border:1px solid #345b78;position:relative;background:radial-gradient(ellipse at 50% 0,#19649c55,transparent 65%),#071321;box-shadow:0 30px 70px #0004}
+.nexus-system:before,.nexus-system:after{content:'';position:absolute;width:35px;height:35px;border-color:#80d1fc;border-style:solid}.nexus-system:before{top:-1px;left:-1px;border-width:2px 0 0 2px}.nexus-system:after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+.system-center{text-align:center;padding:48px 25px 35px}.system-center .eyebrow{display:block;margin-bottom:18px}.system-center strong{font-family:Georgia,serif;font-size:clamp(30px,3.5vw,49px);line-height:1.2;font-weight:400}.system-center p{font-size:13px;margin:20px 0 0}
+.system-track{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #345b78}.system-track span{padding:23px 12px;text-align:center;font-size:11px;color:#acdaf4;border-right:1px solid #345b78}.system-track span:last-child{border:0}
+.aetheris-showcase .features{border:0;gap:18px}.aetheris-showcase .features article{margin:0;padding:30px;border:1px solid #28435b;background:linear-gradient(145deg,#142c4266,#081321);transition:transform .3s,border-color .3s,background .3s;position:relative}.aetheris-showcase .features article:hover{transform:translateY(-5px);border-color:#5ba4d3;background:#10263b}.aetheris-showcase .features .number{display:inline-grid;place-items:center;width:36px;height:36px;border:1px solid #3a688b;background:#0c2035;color:#8cd4fa}.aetheris-showcase .features h3{max-width:none;font-size:23px}.aetheris-showcase .features p{margin-bottom:0}
+.aetheris-showcase .philosophy{max-width:none;text-align:center;padding:65px 9%;border:1px solid #32516a;background:radial-gradient(ellipse at 50% 100%,#14558a44,transparent 70%);position:relative}.aetheris-showcase .philosophy:before{content:'“';position:absolute;left:26px;top:0;font-family:Georgia,serif;font-size:110px;color:#78c8f332}.aetheris-showcase .philosophy .statement{font-size:clamp(29px,3.5vw,48px)}.aetheris-showcase .philosophy>p:last-child{margin:0 auto;max-width:660px}
+.aetheris-showcase #leadership{border-top:0}.aetheris-showcase .executives{gap:35px}.aetheris-showcase .executive{background:linear-gradient(150deg,#102034,#080f19 75%);padding:24px 28px 32px;border:1px solid #2f4c65;box-shadow:0 30px 65px #0004;position:relative}.aetheris-showcase .executive:before{content:'';position:absolute;left:15%;right:15%;height:1px;top:-1px;background:linear-gradient(90deg,transparent,#97dfff,transparent)}.aetheris-showcase .executive .portrait{border:0;border-bottom:1px solid #345a78;background:radial-gradient(ellipse,#123c61,#030a10 70%);margin:-1px -5px 30px;padding:12px}.aetheris-showcase .executive .portrait img{transition:transform .5s;max-width:440px}.aetheris-showcase .executive .portrait:hover img{transform:scale(1.025)}.aetheris-showcase .executive h3{font-size:clamp(27px,2.8vw,39px)}.aetheris-showcase .executive .text-link{display:flex;justify-content:space-between;border-bottom-color:#466b88}.aetheris-showcase .executive .eyebrow{font-size:9px;letter-spacing:.15em}
+.aetheris-showcase .ownership{background:radial-gradient(ellipse at 80% 45%,#0d436a55,transparent 60%),#091420}.aetheris-showcase .ownership .editorial{align-items:center}.ownership-visual{height:260px;width:260px;padding:13px;border-radius:50%;background:conic-gradient(from -90deg,#8edaff 0 51%,#233e58 51% 100%);margin:0 auto 40px;box-shadow:0 0 55px #0b84ce22;position:relative}.ownership-visual:after{content:'';position:absolute;inset:-9px;border:1px solid #315676;border-radius:50%}.ownership-visual>div{height:100%;border-radius:50%;background:radial-gradient(circle,#102b43,#071321);display:flex;flex-direction:column;align-items:center;justify-content:center}.ownership-visual strong{font-size:65px;font-weight:400;line-height:1.2;letter-spacing:-.05em}.ownership-visual strong span{font-size:27px;color:#77cffa}.ownership-visual div>span{text-align:center;font-size:9px;line-height:1.8;letter-spacing:.12em;color:#a1c4dc}.aetheris-showcase .ownership-numbers strong{font-size:50px}.aetheris-showcase .ownership-numbers{border-top:1px solid #2d506b;padding-top:25px}.aetheris-showcase .ownership-bar{height:3px}
+.aetheris-showcase .closing{width:100%;max-width:none;padding-left:6%;padding-right:6%;background:radial-gradient(ellipse at 50% 75%,#104c7d55,transparent 55%),linear-gradient(#040a12,#091726);position:relative}.aetheris-showcase .closing h2{font-size:clamp(40px,5.4vw,76px)}.closing-logo{width:240px;height:auto;margin:15px auto 30px;filter:drop-shadow(0 10px 25px #0785cf33)}.aetheris-showcase .closing .signature{font-size:18px}.aetheris-showcase footer{background:#050c14}
+@keyframes halo-breathe{from{opacity:.55;transform:scale(.95)}to{opacity:1;transform:scale(1.05)}}
+@media(max-width:1000px){.aetheris-showcase .hero{padding-top:60px;min-height:760px;gap:0 22px}.aetheris-showcase .hero h1{font-size:48px}.aetheris-showcase .hero-tagline{font-size:29px}.chapter-nav a{padding:18px 22px}.aetheris-showcase .section{padding-top:85px;padding-bottom:85px}.aetheris-showcase .features article{padding:25px}.aetheris-showcase .executives{gap:22px}.aetheris-showcase .executive{padding:20px}.aetheris-showcase .executive .eyebrow{font-size:8px}.aetheris-showcase .executive-statement{font-size:21px}}
+@media(max-width:700px){.aetheris-showcase .hero{grid-template-columns:1fr;padding:20px 6% 0;gap:15px;min-height:auto}.aetheris-showcase .hero-logo{padding:20px 0;transform:none;max-width:440px}.logo-caption{font-size:8px;margin:0 0 10px}.aetheris-showcase .hero-logo:after{bottom:5px}.aetheris-showcase .hero-copy{padding-top:22px}.aetheris-showcase .hero h1{font-size:clamp(42px,11vw,70px)}.aetheris-showcase .hero-tagline{font-size:29px}.aetheris-showcase .hero-bottom{margin-top:25px}.chapter-nav{display:grid;grid-template-columns:repeat(4,1fr);backdrop-filter:none;background:#09131f}.chapter-nav a{padding:13px 4px;text-align:center;font-size:8px;line-height:1.5}.chapter-nav span{display:block;margin:0 0 4px;font-size:8px}.aetheris-showcase section[id]{scroll-margin-top:70px}.aetheris-showcase .section{padding-top:70px;padding-bottom:70px}.aetheris-showcase h2{font-size:38px}.aetheris-showcase #mission{gap:35px}.purpose-mark{margin:30px 0 20px;height:120px;transform:scale(.8) skewY(-12deg);transform-origin:left center}.aetheris-showcase #mission .lead{font-size:21px}.aetheris-showcase .nexus-name{font-size:76px}.nexus-system{margin:40px 0 50px}.system-track{grid-template-columns:1fr 1fr}.system-track span{padding:17px 8px;font-size:10px;border-bottom:1px solid #345b78}.system-track span:nth-child(even){border-right:0}.system-track span:nth-child(n+3){border-bottom:0}.system-center{padding:36px 18px}.aetheris-showcase .features{gap:14px}.aetheris-showcase .philosophy{padding:40px 22px}.aetheris-showcase .philosophy .statement{font-size:29px}.aetheris-showcase .executives{gap:35px}.aetheris-showcase .executive{padding:20px}.aetheris-showcase .executive .eyebrow{font-size:9px}.ownership-visual{width:220px;height:220px;margin-top:15px}.aetheris-showcase .closing h2{font-size:40px}.closing-logo{width:210px}}
+@media(prefers-reduced-motion:reduce){.aetheris-showcase *, .aetheris-showcase *:before,.aetheris-showcase *:after{animation:none!important;transition:none!important}.aetheris-showcase .features article:hover,.aetheris-showcase .executive .portrait:hover img,.aetheris-showcase .button:hover{transform:none}}
+
+/* Nexus identity supplied by the owner. */
+.aetheris-showcase .nexus-brand-heading{grid-template-columns:1fr 1fr;gap:8%;align-items:center;margin-bottom:35px}
+.nexus-identity .nexus-name{margin-bottom:38px}
+.nexus-identity>div{max-width:450px}
+.nexus-tiger-logo{width:100%;max-width:490px;height:auto;justify-self:center;filter:drop-shadow(0 15px 35px #008bd52b)}
+@media(max-width:700px){.aetheris-showcase .nexus-brand-heading{grid-template-columns:1fr;gap:30px}.nexus-tiger-logo{max-width:380px}.nexus-identity .nexus-name{margin-bottom:30px}}
+
+/* Motion controls and current chapter remain keyboard accessible. */
+.motion-control{font:inherit;font-size:9px;letter-spacing:.08em;color:#bce5fc;background:#0c2134;border:1px solid #456982;padding:8px 12px;cursor:pointer}
+.motion-control:hover{color:white;border-color:#9bdefe}
+.motion-control:focus-visible{outline:2px solid #88d8ff;outline-offset:4px}
+.motion-control[hidden]{display:none}
+.chapter-nav a{transition:background .3s,color .3s,box-shadow .3s}
+.chapter-nav a[aria-current="location"]{color:#e6f7ff;background:#15324a;box-shadow:inset 0 -2px #83d5ff}
+.aetheris-showcase.motion-off *,.aetheris-showcase.motion-off *:before,.aetheris-showcase.motion-off *:after{animation-play-state:paused!important}
+@media(max-width:700px){.aetheris-showcase .hero-bottom{flex-wrap:wrap}.motion-control{font-size:8px;padding:7px 9px}}
+
+/* Luminous chapter navigation. */
+.chapter-nav a{position:relative;color:#d3eeff;background:linear-gradient(180deg,#10314b80,#091824);text-shadow:0 0 12px #69cfff66;box-shadow:inset 0 0 18px #25a9ef12,inset 0 -1px #72cefa66;transition:background .25s,color .25s,box-shadow .25s,text-shadow .25s}
+.chapter-nav a span{color:#87ddff;text-shadow:0 0 9px #38bbff99}
+.chapter-nav a:hover,.chapter-nav a:focus-visible{color:#fff;background:linear-gradient(180deg,#1a4a6c,#102b40);text-shadow:0 0 12px #a3e5ff;box-shadow:inset 0 0 25px #40bdff25,inset 0 -2px #a1e5ff,0 0 20px #2dafff45;z-index:1}
+.chapter-nav a[aria-current="location"]{color:#fff;background:linear-gradient(180deg,#164566,#0d2b42);text-shadow:0 0 14px #8fddff;box-shadow:inset 0 0 24px #3bbbff25,inset 0 -2px #9ee5ff,0 3px 24px #24aaff55;z-index:1}
+
+/* Responsive light, a sweeping highlight, and an animated section underline. */
+.chapter-nav a{isolation:isolate;overflow:hidden;--pointer-x:50%;--pointer-y:50%;transition:background .25s,color .25s,box-shadow .25s,text-shadow .25s,transform .25s}
+.chapter-nav a:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:0;background:radial-gradient(140px circle at var(--pointer-x) var(--pointer-y),#6bd7ff55,transparent 75%);transition:opacity .25s}
+.chapter-nav a:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(110deg,transparent 30%,#a3eaff00 40%,#a3eaff30 50%,#a3eaff00 60%,transparent 70%);transform:translateX(-130%)}
+.chapter-nav a:hover:before,.chapter-nav a:focus-visible:before{opacity:1}
+.chapter-nav a:hover:after,.chapter-nav a:focus-visible:after{animation:chapter-sweep .85s ease-out both}
+.chapter-nav a[aria-current="location"]:after{animation:chapter-sweep 5.5s ease-in-out infinite}
+.chapter-nav a span{display:inline-block;transition:transform .3s,color .3s}
+.chapter-nav a:hover span,.chapter-nav a:focus-visible span{transform:translateY(-2px);color:#fff}
+.chapter-nav a:active{transform:scale(.975)}
+.chapter-nav .chapter-line{position:absolute;height:2px;bottom:0;left:12%;right:12%;background:linear-gradient(90deg,transparent,#a4ebff,transparent);box-shadow:0 0 12px #57cfff;transform:scaleX(.22);opacity:.4;transition:transform .4s cubic-bezier(.2,.8,.2,1),opacity .3s;pointer-events:none}
+.chapter-nav a:hover .chapter-line,.chapter-nav a:focus-visible .chapter-line,.chapter-nav a[aria-current="location"] .chapter-line{transform:scaleX(1);opacity:1}
+@keyframes chapter-sweep{0%{transform:translateX(-130%)}35%,100%{transform:translateX(130%)}}
+.aetheris-showcase.motion-off .chapter-nav a,.aetheris-showcase.motion-off .chapter-nav a span,.aetheris-showcase.motion-off .chapter-line{transition:none}
+.aetheris-showcase.motion-off .chapter-nav a:before{opacity:0}
+.aetheris-showcase.motion-off .chapter-nav a:after{animation:none!important;opacity:0}
+@media(prefers-reduced-motion:reduce){.chapter-nav a:before,.chapter-nav a:after{display:none}.chapter-nav a:active,.chapter-nav a:hover span,.chapter-nav a:focus-visible span{transform:none}}
+
+/* Cinematic hero: layered light, floating particles, reflective surfaces. */
+.hero-atmosphere{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 78% 48%,#086ba35c,transparent 53%)}
+.hero-beam{position:absolute;top:-45%;height:190%;width:22%;background:linear-gradient(90deg,transparent,#239fff0a 25%,#53c7ff30 49%,#a6edff32 50%,#1f85d70d 57%,transparent);transform:rotate(28deg);animation:hero-beam-drift 14s ease-in-out infinite alternate;mix-blend-mode:screen;opacity:.65}
+.beam-0{left:44%}.beam-1{left:73%;animation-delay:-7s;animation-duration:19s;opacity:.4}.beam-2{left:10%;animation-delay:-4s;animation-duration:23s;opacity:.2}
+.hero-particle{position:absolute;left:var(--x);top:var(--y);width:3px;height:3px;border-radius:50%;background:#a5e8ff;box-shadow:0 0 9px #36b9ff,0 0 22px #2baaff70;animation:hero-particle-rise var(--duration) ease-in-out var(--delay) infinite;opacity:0}
+.hero-particle:nth-child(3n){width:2px;height:2px}.hero-particle:nth-child(4n){background:#f2d99d;box-shadow:0 0 10px #e6be70}
+.aetheris-showcase .hero h1{background-image:linear-gradient(110deg,transparent 30%,#fff 46%,#e0f7ff 50%,transparent 65%),linear-gradient(180deg,#fff 5%,#aebdcd 38%,#ecf5ff 50%,#879eb3 62%,#e3eff8 90%);background-size:260% 100%,100% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:hero-title-reflect 7s ease-in-out infinite;filter:drop-shadow(0 0 18px #83bce21a)}
+.aetheris-showcase .hero-logo:before{inset:0 -10% -8%;background:radial-gradient(ellipse,#168fe875,#1462ba35 40%,transparent 67%);animation:hero-logo-aura 6s ease-in-out infinite alternate;filter:blur(22px)}
+.aetheris-showcase .hero-logo:after{height:2px;background:linear-gradient(90deg,transparent,#249fff,#cff9ff,#249fff,transparent);background-size:200% 100%;box-shadow:0 0 18px #36bdff88,0 6px 45px #008fff77;animation:hero-platform-light 5s ease-in-out infinite alternate}
+.aetheris-showcase .hero-logo img{filter:drop-shadow(0 15px 35px #008cff50)}
+.aetheris-showcase .hero .button{position:relative;overflow:hidden;box-shadow:0 0 25px #32c4ff35,0 8px 45px #008bce35;animation:hero-button-glow 4s ease-in-out infinite alternate}
+.aetheris-showcase .hero .button:before{content:'';position:absolute;inset:-30% -50%;background:linear-gradient(110deg,transparent 35%,#fff9 50%,transparent 65%);transform:translateX(-100%);animation:hero-button-sweep 6s ease-in-out infinite;pointer-events:none}
+.aetheris-showcase .hero .button span{animation:hero-arrow-drift 2.8s ease-in-out infinite}
+.aetheris-showcase .hero-out-of-view *,.aetheris-showcase .hero-out-of-view *:before,.aetheris-showcase .hero-out-of-view *:after{animation-play-state:paused!important}
+@keyframes hero-beam-drift{from{transform:translateX(-65px) rotate(25deg)}to{transform:translateX(90px) rotate(34deg)}}
+@keyframes hero-particle-rise{0%{transform:translate3d(0,35px,0);opacity:0}25%{opacity:.55}70%{opacity:.35}100%{transform:translate3d(25px,-100px,0);opacity:0}}
+@keyframes hero-title-reflect{0%,20%{background-position:100% 0,0 0}75%,100%{background-position:0% 0,0 0}}
+@keyframes hero-logo-aura{from{opacity:.55;transform:scale(.9)}to{opacity:1;transform:scale(1.12)}}
+@keyframes hero-platform-light{from{background-position:0% 0;opacity:.55;transform:scaleX(.8)}to{background-position:100% 0;opacity:1;transform:scaleX(1)}}
+@keyframes hero-button-glow{from{box-shadow:0 0 20px #32c4ff25,0 8px 35px #008bce25}to{box-shadow:0 0 35px #32c4ff55,0 8px 55px #008bce45}}
+@keyframes hero-button-sweep{0%,55%{transform:translateX(-100%)}85%,100%{transform:translateX(100%)}}
+@keyframes hero-arrow-drift{0%,100%{translate:0 0}50%{translate:3px -3px}}
+@media(max-width:700px){.hero-beam{width:40%;opacity:.35}.hero-particle:nth-child(even){display:none}}
+@media(prefers-reduced-motion:reduce){.hero-atmosphere .hero-particle{display:none}.aetheris-showcase .hero h1,.aetheris-showcase .hero .button,.aetheris-showcase .hero .button span{animation:none!important}.aetheris-showcase .hero .button:before{display:none}}
+
+.investment-teaser{display:grid;grid-template-columns:1.5fr 1fr;gap:8%;align-items:center;background:radial-gradient(ellipse at 90% 50%,#12334c44,transparent 60%)}
+.investment-teaser h2{font-size:clamp(34px,3.5vw,50px)}.investment-teaser .note{font-size:12px;color:#98afc4}.investment-teaser-actions{display:flex;align-items:flex-start;flex-direction:column;gap:16px}
+.investment-primary{display:block;padding:20px 24px;background:linear-gradient(120deg,#b48a41,#edd49a,#b9904c);color:#19140a;font-size:12px;font-weight:bold;line-height:1.6;border:1px solid #f0d6a0}.investment-primary:hover{color:#000;box-shadow:0 0 30px #dec17c44}
+@media(max-width:700px){.investment-teaser{grid-template-columns:1fr;gap:25px}}
+
+.investment-primary{background:linear-gradient(115deg,#387fbd 0%,#a9e3fa 35%,#eefaff 50%,#79c9f0 68%,#448dc4 100%);color:#071a2a;border-color:#a7e4ff;box-shadow:0 0 22px #219df32b}
+.investment-primary:hover{color:#04111e;box-shadow:0 0 30px #43c5ff55}
+.investment-teaser-actions .text-link{color:#c5eeff;border-color:#63c9f4;text-shadow:0 0 12px #48baff40}
+.investment-teaser-actions .text-link:hover{color:#fff;border-color:#c5f1ff;text-shadow:0 0 16px #48baff80}

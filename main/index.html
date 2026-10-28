@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#060708"><link rel="icon" href="data:,">
+<title>Portfolio | Saber Holdings Inc.</title>
+<style>
+:root{color-scheme:dark;background:#060708;color:#e8e1d0;font-family:Arial,sans-serif}*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid #e9cb86;outline-offset:8px}
+.stage{min-height:100svh;min-height:100dvh;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;background:radial-gradient(ellipse at 76% 45%,#24221c 0%,#0e1011 36%,#060708 70%)}
+.stage:after{content:'';pointer-events:none;position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#06070877,transparent 60%),linear-gradient(0deg,#060708,transparent 30%)}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:36px 5vw;position:relative;z-index:2;border-bottom:1px solid #dcc48d20}
+.brand{font-family:'Palatino Linotype',Georgia,serif;font-size:17px;letter-spacing:.16em;text-transform:uppercase}.nav{display:flex;gap:32px;font-size:10px;letter-spacing:.23em;text-transform:uppercase;align-items:center}.nav a{color:#aaa79d;transition:color .3s}.nav a:hover{color:#ffedbc}.current{color:#e6c57f;position:relative}.current:after{content:'';position:absolute;height:1px;background:#dfbd76;bottom:-12px;left:0;right:0;box-shadow:0 0 12px #edbe6d}
+main{flex:1;display:flex;align-items:center;position:relative;padding:85px 7vw 100px;min-height:620px}.title{position:relative;z-index:1;animation:arrive 1.8s ease both}.eyebrow{font-size:11px;letter-spacing:.48em;color:#cbb078;text-transform:uppercase;display:flex;gap:22px;align-items:center;margin:0 0 32px}.eyebrow:before{content:'';width:56px;height:1px;background:#cbb078;box-shadow:0 0 12px #edbe6d55}
+h1{font-family:'Bodoni MT',Didot,'Times New Roman',serif;font-weight:400;font-size:clamp(80px,10.2vw,196px);line-height:.91;letter-spacing:-.035em;margin:0;text-transform:uppercase}.word{display:block;width:fit-content;padding:.06em .05em .06em 0;color:#e9e3d6;background:linear-gradient(110deg,transparent 38%,#fff9e7 49%,transparent 60%),linear-gradient(175deg,#fffdf4 9%,#d7cbb2 35%,#928574 48%,#f8efdb 57%,#c0b49b 85%);background-size:250% 100%,100% 100%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shine 7s linear infinite;filter:drop-shadow(0 3px 1px #000)}.word:last-child{font-size:.7em;letter-spacing:.045em;margin-top:12px}.inc{font-size:11px;letter-spacing:.6em;margin:28px 0 0 5px;color:#aaa18e;text-transform:uppercase}
+.sculpture{position:absolute;right:-8vw;top:50%;width:min(64vw,1050px);aspect-ratio:1;transform:translateY(-50%) rotate(-22deg);pointer-events:none;z-index:0;animation:sculpture-in 2.4s ease both}.ring{position:absolute;border-radius:50%;inset:12%;border:2px solid #b49c67;background:conic-gradient(from 45deg,#111416 0%,#3d3427 9%,#e0c48b 17%,#fff1c9 19%,#a1824e 21%,#191a19 30%,#080a0b 47%,#ae8b50 64%,#f5dfab 67%,#3f3627 72%,#111416 90%);box-shadow:inset 3px 4px 7px #fff0bf55,inset -7px -8px 16px #000,0 40px 90px #0009;mask:radial-gradient(ellipse,transparent 0% 56%,#000 56.5% 100%);transform:scaleX(.68);animation:light-breathe 8s ease-in-out infinite alternate}.ring:nth-child(2){inset:20%;transform:scaleX(.68) rotate(180deg);animation-delay:-3s}.ring:nth-child(3){inset:28%;transform:scaleX(.68) rotate(30deg);animation-delay:-5s}.glint{position:absolute;top:22%;left:41%;width:27%;height:1px;background:linear-gradient(90deg,transparent,#fff0cb,transparent);box-shadow:0 0 22px 3px #f5d18c44;transform:rotate(-35deg);animation:light-breathe 5s ease-in-out infinite alternate}
+footer{position:relative;z-index:1;margin:0 5vw;padding:24px 0 30px;border-top:1px solid #dcc48d30;display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:#9c9688}.footer-brand{color:#d1b47b}.return{display:flex;align-items:center;gap:16px}.return span{font-size:18px;color:#dfc181;transition:transform .3s}.return:hover span{transform:translateX(-5px)}
+@keyframes arrive{from{opacity:0;transform:translateY(28px);filter:blur(7px)}to{opacity:1;transform:none;filter:none}}@keyframes sculpture-in{from{opacity:0;translate:60px 0}to{opacity:1;translate:0 0}}@keyframes shine{from{background-position:100% 0,0 0}to{background-position:0% 0,0 0}}@keyframes light-breathe{from{filter:brightness(.8)}to{filter:brightness(1.35)}}
+@media(min-width:1700px){main{padding-left:9vw}}
+@media(max-width:760px){header{padding:26px 6vw}.brand{font-size:11px;letter-spacing:.09em}.nav{gap:18px;font-size:9px;letter-spacing:.12em}main{min-height:650px;padding:110px 7vw 220px;align-items:flex-start}h1{font-size:clamp(64px,14.5vw,110px)}.eyebrow{font-size:9px;margin-bottom:28px}.sculpture{width:105vw;right:-28vw;top:72%;opacity:.8}.inc{font-size:9px}.stage{min-height:100svh}footer{font-size:8px;letter-spacing:.14em}.footer-brand{max-width:130px;line-height:1.8}.ring{border-width:1px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+@media(forced-colors:active){.word{background:none;-webkit-text-fill-color:CanvasText}.sculpture{display:none}}
+
+.stage{background:radial-gradient(ellipse at 78% 45%,#292015 0%,#0b0d10 43%,#030405 78%)}
+.sculpture{width:min(78vw,1350px);right:-15vw;transform:translateY(-50%);top:47%;animation:sculpture-in 2.4s ease both}
+.sculpture canvas{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 0 28px #dca64b20)}
+.sculpture.ready .ring,.sculpture.ready .glint{display:none}
+.stage:before{content:'';position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(115deg,transparent 0%,transparent 23%,#dfac4b07 24%,transparent 25%,transparent 42%);transform:scale(1.4);animation:atmosphere 18s ease-in-out infinite alternate;pointer-events:none}
+.title{filter:drop-shadow(0 6px 25px #000)}h1{font-size:clamp(90px,11.3vw,215px)}
+.word{filter:drop-shadow(0 2px 0 #f7dfad22) drop-shadow(0 7px 2px #000);background-image:linear-gradient(110deg,transparent 38%,#fff 49%,transparent 60%),linear-gradient(175deg,#fffdf4 9%,#d7cbb2 35%,#756957 48%,#fff5df 57%,#b49b70 85%)}
+@keyframes atmosphere{from{translate:-3% 0;opacity:.4}to{translate:3% 0;opacity:1}}
+@media(max-width:760px){.sculpture{width:130vw;right:-34vw;top:73%}h1{font-size:clamp(70px,16vw,115px)}main{min-height:700px}}
+@media(prefers-reduced-motion:reduce){.stage:before{animation:none}}
+.aetheris-preview{display:flex;flex-direction:column;align-items:flex-start;width:fit-content;max-width:100%;margin-top:26px;padding-bottom:16px;border-bottom:1px solid #b79860;color:#e6c57f}.aetheris-preview img{display:block;width:260px;max-width:100%;height:auto;margin:0 0 15px;filter:drop-shadow(0 6px 20px #0985c52a);transition:filter .3s,transform .3s}.aetheris-preview span{font-size:10px;letter-spacing:.34em;line-height:1.7;text-transform:uppercase}.aetheris-preview:hover img{transform:translateY(-3px);filter:drop-shadow(0 6px 25px #0985c555)}.aetheris-preview:focus-visible{outline:2px solid #f2d48a;outline-offset:8px}@media(max-width:760px){.aetheris-preview img{width:210px}.aetheris-preview span{font-size:9px;letter-spacing:.22em}}@media(prefers-reduced-motion:reduce){.aetheris-preview img{transition:none}.aetheris-preview:hover img{transform:none}}header{z-index:5}.companies-menu{position:relative}.companies-menu summary{cursor:pointer;list-style:none;color:#efd293;padding:12px 0;white-space:nowrap}.companies-menu summary::-webkit-details-marker{display:none}.companies-menu summary:after{content:"+";display:inline-block;margin-left:12px;color:#f2dca7}.companies-menu[open] summary:after{content:"?"}.companies-menu summary:focus-visible{outline:2px solid #e9cd8b;outline-offset:6px}.companies-panel{position:absolute;top:calc(100% + 14px);right:0;width:300px;max-width:85vw;padding:20px;background:linear-gradient(145deg,#142332,#080d13);border:1px solid #9d824c;box-shadow:0 20px 65px #000b}.companies-panel .aetheris-preview{margin:0;border-bottom:0;padding:0;width:100%;align-items:center}.companies-panel .aetheris-preview img{width:240px}.companies-panel .aetheris-preview span{text-align:center;font-size:9px;letter-spacing:.17em;color:#e6c57f}@media(max-width:760px){header{flex-wrap:wrap}.nav{flex-wrap:wrap;gap:22px}.companies-menu{position:static}.companies-panel{right:6vw;width:270px;max-width:88vw;top:calc(100% - 10px)}}</style>
+<meta name="robots" content="noindex, nofollow"></head>
+<body><div class="stage">
+<header><a class="brand" href="/saber-holdings-demo/">Saber Holdings Inc.</a><nav class="nav" aria-label="Main navigation"><a href="/saber-holdings-demo/">Home</a><span class="current" aria-current="page">Portfolio</span><details class="companies-menu"><summary>Our Companies</summary><div class="companies-panel"><a class="aetheris-preview" href="/saber-holdings-demo/portfolio/aetheris/"><img src="/saber-holdings-demo/assets/aetheris/aetheris-logo-v3.png" width="1536" height="1024" alt="Aetheris Inc." decoding="async"><span>Explore Aetheris Inc. &#8599;</span></a></div></details></nav></header>
+<main><div class="title"><p class="eyebrow">Portfolio</p><h1 aria-label="Saber Holdings"><span class="word">Saber</span><span class="word">Holdings</span></h1><p class="inc">Incorporated</p></div><div class="sculpture" aria-hidden="true"><div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="glint"></div></div></main>
+<footer><span class="footer-brand">Saber Holdings Inc.</span><a class="return" href="/saber-holdings-demo/"><span aria-hidden="true">&#8592;</span> Back to entrance</a></footer>
+</div>
+<script>
+(() => {
+const host=document.querySelector('.sculpture'), canvas=document.createElement('canvas');
+canvas.setAttribute('aria-hidden','true');host.appendChild(canvas);
+const gl=canvas.getContext('webgl',{alpha:true,antialias:false,powerPreference:'low-power',premultipliedAlpha:false});if(!gl)return;
+const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+const fs=`precision highp float;
+uniform vec2 size;uniform float time;uniform vec2 pointer;
+mat2 rot(float a){return mat2(cos(a),-sin(a),sin(a),cos(a));}
+float tor(vec3 p,float r,float w){return length(vec2(length(p.xz)-r,p.y))-w;}
+float scene(vec3 p){
+ p.xz=rot(time*.12+pointer.x*.22)*p.xz;p.xy=rot(-.35+pointer.y*.13)*p.xy;
+ vec3 a=p;a.xy=rot(.78+sin(time*.17)*.2)*a.xy;
+ vec3 b=p;b.yz=rot(1.18+time*.09)*b.yz;
+ vec3 c=p;c.xy=rot(-.85)*c.xy;c.yz=rot(.8-time*.07)*c.yz;
+ return min(tor(a,1.55,.17),min(tor(b,1.16,.14),tor(c,.77,.13)));
+}
+vec3 normal(vec3 p){vec2 e=vec2(.002,0.);return normalize(vec3(scene(p+e.xyy)-scene(p-e.xyy),scene(p+e.yxy)-scene(p-e.yxy),scene(p+e.yyx)-scene(p-e.yyx)));}
+vec3 env(vec3 r){
+ float strip=pow(max(0.,1.-abs(r.y-.45)*3.),18.);
+ float strip2=pow(max(0.,1.-abs(r.x+.45)*4.),25.);
+ float soft=pow(max(dot(r,normalize(vec3(-1.,2.,2.))),0.),7.);
+ return vec3(.06,.07,.085)+vec3(2.5,2.1,1.4)*strip+vec3(1.7,1.85,2.)*strip2+vec3(.9,.67,.31)*soft;
+}
+float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+void main(){
+ vec2 uv=(gl_FragCoord.xy-.5*size)/size.y;
+ vec3 ro=vec3(0.,.2,5.8),rd=normalize(vec3(uv*4.5,-5.));float t=0.;bool hit=false;
+ for(int i=0;i<80;i++){float d=scene(ro+rd*t);if(d<.002){hit=true;break;}t+=d*.85;if(t>10.)break;}
+ vec3 color=vec3(0.);float alpha=0.;
+ if(hit){vec3 p=ro+rd*t,n=normal(p),r=reflect(rd,n);vec3 light=normalize(vec3(-3.+pointer.x*2.,4.,4.));
+ float dif=max(dot(n,light),0.);float fres=pow(1.-max(dot(n,-rd),0.),3.);
+ float occ=clamp(scene(p+n*.22)/.22,.25,1.);
+ vec3 gold=vec3(.94,.66,.29);color=(env(r)*gold+gold*dif*.19)*occ+vec3(1.,.8,.47)*fres*.5;
+ float spec=pow(max(dot(reflect(-light,n),-rd),0.),65.);color+=vec3(1.,.91,.69)*spec*2.;
+ color=color/(color+vec3(.7));color=pow(color,vec3(.85));alpha=1.;
+ }else{
+ vec2 grid=uv*27.;grid.y-=time*.12;vec2 cell=floor(grid);vec2 f=fract(grid)-.5;
+ float seed=hash(cell);float spark=(1.-smoothstep(0.,.035,length(f)))*step(.94,seed)*(.35+.65*pow(sin(time*.5+seed*40.)*.5+.5,6.));
+ float halo=exp(-length(uv)*5.)*.045;color=vec3(.85,.59,.23);alpha=spark*.65+halo;
+ }
+ gl_FragColor=vec4(color,alpha);
+}`;
+function shader(type,source){const sh=gl.createShader(type);gl.shaderSource(sh,source);gl.compileShader(sh);if(!gl.getShaderParameter(sh,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(sh));return sh;}
+try{
+const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vs));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fs));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error('Graphics link failed');gl.useProgram(program);
+const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);const loc=gl.getAttribLocation(program,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+const uSize=gl.getUniformLocation(program,'size'),uTime=gl.getUniformLocation(program,'time'),uPointer=gl.getUniformLocation(program,'pointer');
+let px=0,py=0,x=0,y=0,frame=0,last=0;const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+function resize(){const r=host.getBoundingClientRect();const scale=Math.min(1,900/r.width);canvas.width=Math.round(r.width*scale);canvas.height=Math.round(r.height*scale);gl.viewport(0,0,canvas.width,canvas.height);gl.uniform2f(uSize,canvas.width,canvas.height);}
+new ResizeObserver(()=>{resize();if(reduced.matches)draw(0);}).observe(host);
+addEventListener('pointermove',e=>{px=e.clientX/innerWidth*2-1;py=e.clientY/innerHeight*2-1;},{passive:true});
+function draw(now){x+=(px-x)*.035;y+=(py-y)*.035;gl.uniform2f(uPointer,reduced.matches?0:x,reduced.matches?0:y);gl.uniform1f(uTime,reduced.matches?3:now*.001);gl.drawArrays(gl.TRIANGLES,0,6);}
+function tick(now){if(!document.hidden&&now-last>32){draw(now);last=now;}if(!reduced.matches)frame=requestAnimationFrame(tick);}
+reduced.addEventListener('change',()=>{cancelAnimationFrame(frame);draw(0);if(!reduced.matches)frame=requestAnimationFrame(tick);});
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(frame);host.classList.remove('ready');canvas.style.display='none';});
+resize();draw(0);host.classList.add('ready');if(!reduced.matches)frame=requestAnimationFrame(tick);
+}catch(e){canvas.remove();console.warn('Using sculptural fallback',e.message);}
+})();
+</script>
+<script>const companyMenu=document.querySelector(".companies-menu");document.addEventListener("keydown",e=>{if(e.key==="Escape"&&companyMenu.open){companyMenu.open=false;companyMenu.querySelector("summary").focus();}});document.addEventListener("click",e=>{if(!companyMenu.contains(e.target))companyMenu.open=false;});</script></body></html>

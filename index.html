@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070809">
+<link rel="icon" href="data:,">
+<title>Saber Holdings Inc.</title>
+<style>
+:root { color-scheme: dark; background: #070809; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; background: #070809; }
+.entry { min-height: 100svh; min-height: 100dvh; width: 100%; display: grid; place-items: center; padding: 40px 24px; overflow: hidden; position: relative; isolation: isolate; }
+.entry::before { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 50% 42%, #1a1b1c 0%, #101112 25%, #070809 64%); }
+.entry::after { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: -1; opacity: .13; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.22' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+.identity { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+h1 { margin: 0; color: #e4dfd3; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif; font-size: clamp(30px, 3.65vw, 64px); font-weight: 400; line-height: 1.3; letter-spacing: .12em; text-indent: .12em; text-transform: uppercase; font-kerning: normal; text-shadow: 0 2px 30px #e3d3ad0b; opacity: 0; animation: reveal 2.4s cubic-bezier(.2,.65,.3,1) .2s forwards; }
+.enter { display: inline-flex; align-items: center; justify-content: center; position: relative; margin-top: clamp(36px, 4vw, 54px); min-height: 52px; min-width: 194px; padding: 17px 34px; border: 1px solid #e7c777; border-radius: 2px; color: #20190b; background: linear-gradient(115deg, #aa7c32 0%, #e5c985 33%, #f1dba0 50%, #d9b56a 72%, #b88a3e 100%); box-shadow: 0 0 22px #d8aa4e24, 0 0 70px #d8aa4e12, inset 0 1px 0 #fff0c3a6; font: 500 10px/1.4 Arial, sans-serif; letter-spacing: .3em; text-indent: .3em; text-transform: uppercase; text-decoration: none; opacity: 0; animation: reveal 1.8s ease 1.3s forwards; transition: box-shadow .4s, filter .4s, transform .4s; -webkit-tap-highlight-color: transparent; }
+.enter:hover { filter: brightness(1.1); box-shadow: 0 0 30px #d8aa4e55, 0 0 95px #d8aa4e20, inset 0 1px 0 #fff0c3; transform: translateY(-2px); }
+.enter:active { transform: translateY(0); }
+.enter:focus-visible { outline: 2px solid #f6e7c0; outline-offset: 7px; }
+@keyframes reveal { from { opacity: 0; translate: 0 10px; filter: blur(5px); } to { opacity: 1; translate: 0 0; filter: blur(0); } }
+@media (max-width: 540px) { h1 { max-width: 100%; text-wrap: balance; font-size: clamp(25px, 7vw, 37px); letter-spacing: .085em; text-indent: .085em; } .enter { min-width: 180px; } }
+@media (prefers-reduced-motion: reduce) { h1, .enter { animation: none; opacity: 1; } .enter { transition: none; } }
+h1 .metal { display: inline-block; color: #dfddd5; }
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h1 .metal { background-image: linear-gradient(112deg, transparent 38%, #ffffff00 44%, #fffef3d9 49%, #ffffff00 54%, transparent 62%), linear-gradient(180deg, #fffdf4 0%, #c1c0b9 23%, #f4f1e8 40%, #8b8d89 49%, #e4e2d8 54%, #fffdf3 65%, #b4b1a6 85%, #e0d9c7 100%); background-size: 260% 100%, 100% 200%; background-position: 100% 0, 0 0%; background-repeat: no-repeat; background-clip: text; -webkit-background-clip: text; color: transparent; -webkit-text-fill-color: transparent; text-shadow: none; filter: drop-shadow(0 1px 0 #ffffff12) drop-shadow(0 4px 18px #c5c3b910); animation: metal-light 6s linear 1s infinite, metal-depth 8s ease-in-out 1s infinite alternate; }
+}
+@keyframes metal-light { from { background-position-x: 100%, 0%; } to { background-position-x: 0%, 0%; } } @keyframes metal-depth { from { background-position-y: 0%, 0%; } to { background-position-y: 0%, 100%; } }
+.enter { overflow: hidden; background: linear-gradient(110deg, #ac8037 0%, #d2af67 26%, #f0d99a 48%, #cba359 75%, #b3863c 100%); box-shadow: 0 0 24px #d8aa4e2b, 0 0 76px #d8aa4e14, inset 0 1px 0 #fff4cebd, inset 0 -1px 0 #63420e70; }
+.enter::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 32%, #fff8dc60 50%, transparent 68%); transform: translateX(-140%); transition: transform .9s ease; }
+.enter:hover::after, .enter:focus-visible::after { transform: translateX(140%); }
+@media (prefers-reduced-motion: reduce) { h1 .metal { animation: none; } .enter::after { display: none; } }
+@media (forced-colors: active) { h1 .metal { background: none; color: CanvasText; -webkit-text-fill-color: CanvasText; filter: none; } }
+.entry::before { background: radial-gradient(ellipse at 50% 47%, #29251e 0%, #151514 28%, #08090a 57%, #030405 88%); }
+.entry::after { opacity: .09; }
+h1 { font-family: 'Bodoni MT', Didot, 'Times New Roman', serif; font-size: clamp(46px, 6.5vw, 126px); line-height: 1.16; letter-spacing: .065em; text-indent: .065em; }
+.identity { gap: clamp(48px, 5vw, 88px); }
+h1 .metal { padding: .12em 0; }
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+ h1 .metal { background-image: linear-gradient(112deg, transparent 35%, #ffefc52e 43%, #ffffff 49%, #fff4d8a6 51%, transparent 60%), linear-gradient(180deg, #fffef7 0%, #d5cbb4 21%, #fffdf1 38%, #89857a 49%, #e7dfc9 53%, #ffffff 64%, #aea18b 82%, #f7ebcf 100%); filter: drop-shadow(0 1px 0 #f6e6be66) drop-shadow(0 3px 1px #000) drop-shadow(0 0 24px #d9c39524); }
+}
+.enter { margin-top: 0; min-width: clamp(250px, 19vw, 330px); min-height: 68px; padding: 24px 42px; font-size: 11px; letter-spacing: .34em; border: 1px solid #ffe2a0; border-radius: 2px; background: linear-gradient(110deg, #8a5c20 0%, #b78c42 13%, #e6c57d 33%, #fff0ba 48%, #d6b063 65%, #bd9145 85%, #8d6327 100%); box-shadow: 0 0 0 3px #d4b27414, 0 0 36px #e8bc5b45, 0 0 110px #d7a84d20, 0 18px 45px #0009, inset 0 2px 0 #fff7d6c9, inset 0 -3px 0 #5d3b1a8c; }
+.enter:hover { filter: brightness(1.12); box-shadow: 0 0 0 3px #d4b27426, 0 0 48px #e8bc5b70, 0 0 140px #d7a84d35, 0 18px 45px #0009, inset 0 2px 0 #fff7d6; }
+@media (max-width: 700px) { h1 { font-size: clamp(38px, 8.2vw, 57px); letter-spacing: .055em; text-indent: .055em; text-wrap: balance; } .identity { gap: 44px; } .enter { min-width: 244px; min-height: 62px; padding: 21px 32px; } }
+
+.entry{background:#030405}
+.entry::before{z-index:-3;background:radial-gradient(ellipse at 50% 44%,#312519 0%,#101013 38%,#030405 76%)}
+.entry::after{z-index:-1;opacity:.08}
+.sculpture{position:absolute;left:50%;top:48%;width:min(110vw,1400px);aspect-ratio:1;transform:translate(-50%,-50%);z-index:-2;pointer-events:none;opacity:.65;animation:sculpture-reveal 3s ease both}
+.sculpture canvas{display:block;width:100%;height:100%;filter:drop-shadow(0 0 32px #d5a34928)}
+.identity{position:relative;isolation:isolate}
+.identity::before{content:'';position:absolute;inset:-60px -24px;z-index:-1;background:radial-gradient(ellipse,#030405b8 0%,#03040566 45%,transparent 72%);pointer-events:none}
+h1 .metal{filter:drop-shadow(0 2px 0 #f6e6be66) drop-shadow(0 4px 2px #000) drop-shadow(0 0 28px #d9c39535)}
+.enter{box-shadow:0 0 0 3px #d4b27420,0 0 42px #e8bc5b55,0 0 130px #d7a84d2b,0 18px 45px #000,inset 0 2px 0 #fff7d6c9,inset 0 -3px 0 #5d3b1a8c}
+@keyframes sculpture-reveal{from{opacity:0;filter:blur(12px)}to{opacity:.65;filter:blur(0)}}
+@media(max-width:700px){.sculpture{width:180vw;top:46%}.identity::before{inset:-50px -24px}}
+@media(prefers-reduced-motion:reduce){.sculpture{animation:none}}
+</style>
+<meta name="robots" content="noindex, nofollow"></head>
+<body>
+<main class="entry">
+<div class="sculpture" aria-hidden="true"></div>
+<div class="identity">
+<h1><span class="metal">Saber Holdings Inc.</span></h1>
+<a class="enter" href="/saber-holdings-demo/main/">View Portfolio</a>
+</div>
+</main>
+<script>
+(() => {
+const host=document.querySelector('.sculpture'), canvas=document.createElement('canvas');
+canvas.setAttribute('aria-hidden','true');host.appendChild(canvas);
+const gl=canvas.getContext('webgl',{alpha:true,antialias:false,powerPreference:'low-power',premultipliedAlpha:false});if(!gl)return;
+const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+const fs=`precision highp float;
+uniform vec2 size;uniform float time;uniform vec2 pointer;
+mat2 rot(float a){return mat2(cos(a),-sin(a),sin(a),cos(a));}
+float tor(vec3 p,float r,float w){return length(vec2(length(p.xz)-r,p.y))-w;}
+float scene(vec3 p){
+ p.xz=rot(time*.12+pointer.x*.22)*p.xz;p.xy=rot(-.35+pointer.y*.13)*p.xy;
+ vec3 a=p;a.xy=rot(.78+sin(time*.17)*.2)*a.xy;
+ vec3 b=p;b.yz=rot(1.18+time*.09)*b.yz;
+ vec3 c=p;c.xy=rot(-.85)*c.xy;c.yz=rot(.8-time*.07)*c.yz;
+ return min(tor(a,1.55,.17),min(tor(b,1.16,.14),tor(c,.77,.13)));
+}
+vec3 normal(vec3 p){vec2 e=vec2(.002,0.);return normalize(vec3(scene(p+e.xyy)-scene(p-e.xyy),scene(p+e.yxy)-scene(p-e.yxy),scene(p+e.yyx)-scene(p-e.yyx)));}
+vec3 env(vec3 r){
+ float strip=pow(max(0.,1.-abs(r.y-.45)*3.),18.);
+ float strip2=pow(max(0.,1.-abs(r.x+.45)*4.),25.);
+ float soft=pow(max(dot(r,normalize(vec3(-1.,2.,2.))),0.),7.);
+ return vec3(.06,.07,.085)+vec3(2.5,2.1,1.4)*strip+vec3(1.7,1.85,2.)*strip2+vec3(.9,.67,.31)*soft;
+}
+float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+void main(){
+ vec2 uv=(gl_FragCoord.xy-.5*size)/size.y;
+ vec3 ro=vec3(0.,.2,6.8),rd=normalize(vec3(uv*4.5,-5.));float t=0.;bool hit=false;
+ for(int i=0;i<80;i++){float d=scene(ro+rd*t);if(d<.002){hit=true;break;}t+=d*.85;if(t>10.)break;}
+ vec3 color=vec3(0.);float alpha=0.;
+ if(hit){vec3 p=ro+rd*t,n=normal(p),r=reflect(rd,n);vec3 light=normalize(vec3(-3.+pointer.x*2.,4.,4.));
+ float dif=max(dot(n,light),0.);float fres=pow(1.-max(dot(n,-rd),0.),3.);
+ float occ=clamp(scene(p+n*.22)/.22,.25,1.);
+ vec3 gold=vec3(.94,.66,.29);color=(env(r)*gold+gold*dif*.19)*occ+vec3(1.,.8,.47)*fres*.5;
+ float spec=pow(max(dot(reflect(-light,n),-rd),0.),65.);color+=vec3(1.,.91,.69)*spec*2.;
+ color=color/(color+vec3(.7));color=pow(color,vec3(.85));alpha=1.;
+ }else{
+ vec2 grid=uv*27.;grid.y-=time*.12;vec2 cell=floor(grid);vec2 f=fract(grid)-.5;
+ float seed=hash(cell);float spark=(1.-smoothstep(0.,.035,length(f)))*step(.94,seed)*(.35+.65*pow(sin(time*.5+seed*40.)*.5+.5,6.));
+ float halo=exp(-length(uv)*5.)*.045;color=vec3(.85,.59,.23);alpha=spark*.65+halo;
+ }
+ gl_FragColor=vec4(color,alpha);
+}`;
+function shader(type,source){const sh=gl.createShader(type);gl.shaderSource(sh,source);gl.compileShader(sh);if(!gl.getShaderParameter(sh,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(sh));return sh;}
+try{
+const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vs));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fs));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error('Graphics link failed');gl.useProgram(program);
+const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);const loc=gl.getAttribLocation(program,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+const uSize=gl.getUniformLocation(program,'size'),uTime=gl.getUniformLocation(program,'time'),uPointer=gl.getUniformLocation(program,'pointer');
+let px=0,py=0,x=0,y=0,frame=0,last=0;const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+function resize(){const r=host.getBoundingClientRect();const scale=Math.min(1,900/r.width);canvas.width=Math.round(r.width*scale);canvas.height=Math.round(r.height*scale);gl.viewport(0,0,canvas.width,canvas.height);gl.uniform2f(uSize,canvas.width,canvas.height);}
+new ResizeObserver(()=>{resize();if(reduced.matches)draw(0);}).observe(host);
+addEventListener('pointermove',e=>{px=e.clientX/innerWidth*2-1;py=e.clientY/innerHeight*2-1;},{passive:true});
+function draw(now){x+=(px-x)*.035;y+=(py-y)*.035;gl.uniform2f(uPointer,reduced.matches?0:x,reduced.matches?0:y);gl.uniform1f(uTime,reduced.matches?3:now*.001);gl.drawArrays(gl.TRIANGLES,0,6);}
+function tick(now){if(!document.hidden&&now-last>32){draw(now);last=now;}if(!reduced.matches)frame=requestAnimationFrame(tick);}
+reduced.addEventListener('change',()=>{cancelAnimationFrame(frame);draw(0);if(!reduced.matches)frame=requestAnimationFrame(tick);});
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(frame);host.classList.remove('ready');canvas.style.display='none';});
+resize();draw(0);host.classList.add('ready');if(!reduced.matches)frame=requestAnimationFrame(tick);
+}catch(e){canvas.remove();console.warn('Using sculptural fallback',e.message);}
+})();
+</script>
+</body>
+</html>
